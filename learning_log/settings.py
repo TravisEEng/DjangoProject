@@ -37,7 +37,7 @@ INSTALLED_APPS = [
 
     #Third party apps
     'bootstrap4',
-    
+
     #Default apps
     'django.contrib.admin',
     'django.contrib.auth',
@@ -106,7 +106,9 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
+# Heroku settings.
+import django_heroku
+django_heroku.settings(locals())
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
